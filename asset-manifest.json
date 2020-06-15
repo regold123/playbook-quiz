@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/playbook-quiz/static/css/main.ab92684e.chunk.css",
+    "main.js": "/playbook-quiz/static/js/main.f94c7d39.chunk.js",
+    "main.js.map": "/playbook-quiz/static/js/main.f94c7d39.chunk.js.map",
+    "runtime-main.js": "/playbook-quiz/static/js/runtime-main.1af17c6d.js",
+    "runtime-main.js.map": "/playbook-quiz/static/js/runtime-main.1af17c6d.js.map",
+    "static/js/2.762b0b35.chunk.js": "/playbook-quiz/static/js/2.762b0b35.chunk.js",
+    "static/js/2.762b0b35.chunk.js.map": "/playbook-quiz/static/js/2.762b0b35.chunk.js.map",
+    "index.html": "/playbook-quiz/index.html",
+    "precache-manifest.7ab518f32731852e24c013c59d6e9c54.js": "/playbook-quiz/precache-manifest.7ab518f32731852e24c013c59d6e9c54.js",
+    "service-worker.js": "/playbook-quiz/service-worker.js",
+    "static/css/main.ab92684e.chunk.css.map": "/playbook-quiz/static/css/main.ab92684e.chunk.css.map",
+    "static/js/2.762b0b35.chunk.js.LICENSE.txt": "/playbook-quiz/static/js/2.762b0b35.chunk.js.LICENSE.txt",
+    "static/media/90G.jpg": "/playbook-quiz/static/media/90G.2d822521.jpg",
+    "static/media/90L.jpg": "/playbook-quiz/static/media/90L.8228bde6.jpg",
+    "static/media/90N.jpg": "/playbook-quiz/static/media/90N.67feb7b6.jpg",
+    "static/media/90R.jpg": "/playbook-quiz/static/media/90R.8419956a.jpg",
+    "static/media/91G.jpg": "/playbook-quiz/static/media/91G.44b68f62.jpg",
+    "static/media/91L.jpg": "/playbook-quiz/static/media/91L.f02cf9aa.jpg",
+    "static/media/91N.jpg": "/playbook-quiz/static/media/91N.6049a43b.jpg",
+    "static/media/91R.jpg": "/playbook-quiz/static/media/91R.a0a6a0f5.jpg",
+    "static/media/93G.jpg": "/playbook-quiz/static/media/93G.5bdb4c18.jpg",
+    "static/media/93L.jpg": "/playbook-quiz/static/media/93L.a314e85f.jpg",
+    "static/media/93N.jpg": "/playbook-quiz/static/media/93N.da34a5ae.jpg",
+    "static/media/93R.jpg": "/playbook-quiz/static/media/93R.efd8e048.jpg",
+    "static/media/96G.jpg": "/playbook-quiz/static/media/96G.5cc6e966.jpg",
+    "static/media/96L.jpg": "/playbook-quiz/static/media/96L.4afeaeb7.jpg",
+    "static/media/96N.jpg": "/playbook-quiz/static/media/96N.9b204301.jpg",
+    "static/media/96R.jpg": "/playbook-quiz/static/media/96R.a397f340.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1af17c6d.js",
+    "static/js/2.762b0b35.chunk.js",
+    "static/css/main.ab92684e.chunk.css",
+    "static/js/main.f94c7d39.chunk.js"
+  ]
+}
