@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6fde93dca8a71e5cda62ed4d690277c5",
+    "revision": "4673969655aede3a423d0cca61c8438d",
     "url": "/playbook-quiz/index.html"
   },
   {
-    "revision": "819b1794511d3bb65dd7",
-    "url": "/playbook-quiz/static/css/main.ab92684e.chunk.css"
+    "revision": "538d1b4acc0d248faec1",
+    "url": "/playbook-quiz/static/css/main.a45847dc.chunk.css"
   },
   {
     "revision": "ffc2d105491559e78482",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/playbook-quiz/static/js/2.762b0b35.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "819b1794511d3bb65dd7",
-    "url": "/playbook-quiz/static/js/main.f94c7d39.chunk.js"
+    "revision": "538d1b4acc0d248faec1",
+    "url": "/playbook-quiz/static/js/main.c8936f04.chunk.js"
   },
   {
     "revision": "d82ef95dfac645ce36da",
