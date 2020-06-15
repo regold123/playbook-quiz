@@ -46,7 +46,9 @@ class QuizBee extends Component {
   render() {
     return (
       <div className="container">
-        <div className='title'>QuizBee</div>
+        <div className='title'>How well do you know your playbook?</div>
+        <div className='instructions'><h4>Choose the right play route for each question.
+        Your score will be available once you answer them all.</h4></div>
         {this.state.questionBank.length > 0 &&
           this.state.responses < 6 &&
           this.state.questionBank.map(
