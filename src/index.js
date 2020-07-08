@@ -1,19 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/style.css";
-import quizService from "./quizService";
-import QuestionBox from "./components/QuestionBox";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import questionBank from "./questionBank/questionBank.js";
+import QuestionBox from "./components/answers";
 import Result from "./components/Result";
 
-class QuizBee extends Component {
-  state = {
-    questionBank: [],
-    score: 0,
-    responses: 0,
-  };
 
-  getQuestions = () => {
-    quizService().then(question => {
+class Quiz extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      questionBank: [],
+      score: 0,
+      questionsRemaining: 0,
+    };
+}
+
+  getQuestion = () => {
+    questionBank().then(question => {
       this.setState({
         questionBank: question,
       });
@@ -32,40 +39,48 @@ class QuizBee extends Component {
   };
 
   playAgain = () => {
-    this.getQuestions();
+    this.getQuestion();
     this.setState({
-        score: 0,
-        responses: 0,
+      score: 0,
     });
   };
 
   componentDidMount() {
-    this.getQuestions();
+    this.getQuestion();
   }
 
+
   render() {
+      let { nr, total, showButton } = this.state;
     return (
-      <div className="container">
-        <div className='title'>How well do you know your playbook?</div>
-        <div className='instructions'><h4>Choose the right play route for each question.
-        Your score will be available once you answer them all.</h4></div>
-        {this.state.questionBank.length > 0 &&
-          this.state.responses < 6 &&
-          this.state.questionBank.map(
+
+      <Container>
+
+          <div className="qBox">
+          {this.state.questionBank.map(
             ({question, answers, correct, questionId}) => (
+
+          <Row>
               <QuestionBox
                 question={question}
                 options={answers}
-                key={questionId}
+                correct={correct}
+                showButton={this.handleShowButton}
                 selected={answer => this.computeAnswer(answer, correct)}
               />
+              <div className="submit">
+                {showButton ? <button className="fancy-btn" onClick={this.nextQuestion} >{nr===total ? 'Finish Quiz' : 'Next question'}</button> : null}
+              </div>
+          </Row>
             )
           )}
 
           {this.state.responses === 6 ? (<Result score={this.state.score} playAgain={this.playAgain} />) : null}
-      </div>
+          </div>
+      </Container>
     );
   }
 }
 
-ReactDOM.render(<QuizBee />, document.getElementById("root"));
+
+ReactDOM.render(<Quiz />, document.getElementById("root"));

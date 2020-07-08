@@ -2,7 +2,7 @@ import React from "react";
 
 const Result = ({score, playAgain}) => (
   <div className="scoreboard">
-    <div className="score">You scored {score} / 6 correct answers!</div>
+    <div className="score">You scored {score} / 10 correct answers!</div>
     <button className="playBtn" onClick={playAgain}>
       Play again?
     </button>
