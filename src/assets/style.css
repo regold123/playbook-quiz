@@ -45,6 +45,61 @@ body {
   justify-content: center;
 }
 
+.playButton {
+    border: 2px solid #0b0e21;
+    border-radius: 0;
+    background-color: #0b0e21;
+    color: #fff;
+    display: inline-block;
+    align-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 75px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    transition: color .2s ease, background-color .2s ease;
+}
+
+.playButton:hover {
+    background-color: #fff;
+    color: #0b0e21;
+}
+
+.popupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popup h1 {
+  background-color: #f05a28;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 0;
+}
+
+.popup p {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin: 20px 10% 0;
+}
+
+
 /*
 .optionButton {
   position: relative;
@@ -81,4 +136,18 @@ button {
 .optionButton img:hover {
     transform: scale(1.03);
     box-shadow: 2px 2px 4px #000000;
+}
+
+.fancy-btn {
+    border: 2px solid #0b0e21;
+    border-radius: 0;
+    background-color: #0b0e21;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 75px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    transition: color .2s ease, background-color .2s ease;
 }

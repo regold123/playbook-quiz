@@ -6,26 +6,80 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import questionBank from "./questionBank/questionBank.js";
 import QuestionBox from "./components/answers";
-import Result from "./components/Result";
+import Popup from "./components/popup";
 
 
 class Quiz extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      questionBank: [],
+      currentQuestionBank: [],
       score: 0,
-      questionsRemaining: 0,
+      total: questionBank.length,
+      qR: 0,
+      showButton: false,
+      displayPopup: 'flex',
+      classNames: ['','','',''],
     };
 }
 
-  getQuestion = () => {
-    questionBank().then(question => {
+  pushData(qR) {
+    this.setState({
+      question: questionBank[qR].question,
+      answer1: questionBank[qR].answers[0],
+      answer2: questionBank[qR].answers[1],
+      answer3: questionBank[qR].answers[2],
+      answer4: questionBank[qR].answers[3],
+      correct: questionBank[qR].correct,
+      qR: this.state.qR + 1,
+    });
+  }
+
+  nextQuestion = () => {
+    let { qR, total } = this.state;
+
+    if (qR === total){
       this.setState({
-        questionBank: question,
+        displayPopup: 'flex',
       });
+    } else {
+      this.pushData(qR);
+      this.setState({
+        showButton: false,
+      });
+    }
+  }
+
+
+  showButton = () => {
+    this.setState({
+      showButton: true,
     });
   };
+
+  startQuiz = () => {
+    this.setState({
+      displayPopup: 'none',
+      qR: 1,
+    });
+  }
+
+  playAgain = () => {
+    this.setState({
+      score: 0,
+      total: questionBank.length,
+      qR: 0,
+      showButton: false,
+      displayPopup: 'flex',
+      classNames: ['','','',''],
+      question: questionBank[0].question,
+      answer1: questionBank[0].answers[0],
+      answer2: questionBank[0].answers[1],
+      answer3: questionBank[0].answers[2],
+      answer4: questionBank[0].answers[3],
+      correct: questionBank[0].correct,
+    });
+  }
 
   computeAnswer = (answer, correctAnswer) => {
     if (answer === correctAnswer) {
@@ -33,49 +87,61 @@ class Quiz extends React.Component {
         score: this.state.score + 1,
       });
     }
-    this.setState({
-      responses: this.state.responses < 6 ? this.state.responses +1 : 6
-    });
   };
 
-  playAgain = () => {
-    this.getQuestion();
-    this.setState({
-      score: 0,
-    });
-  };
 
   componentDidMount() {
-    this.getQuestion();
+    let { qR } = this.state;
+    this.pushData(qR);
   }
 
 
   render() {
-      let { nr, total, showButton } = this.state;
+    const qR = this.state.qR;
+    const total = this.state.total;
+    const question = this.state.question;
+    const answer1 = this.state.answer1;
+    const answer2 = this.state.answer2;
+    const answer3 = this.state.answer3;
+    const answer4 = this.state.answer4;
+    const correct = this.state.correct;
+    const showButton = this.state.showButton;
+    const classNames = this.state.classNames;
+    const displayPopup = this.state.displayPopup;
+    const score = this.state.score;
+
     return (
 
       <Container>
 
           <div className="qBox">
-          {this.state.questionBank.map(
-            ({question, answers, correct, questionId}) => (
 
           <Row>
               <QuestionBox
+                number={qR}
+                total={total}
                 question={question}
-                options={answers}
+                options={[answer1, answer2, answer3, answer4]}
                 correct={correct}
-                showButton={this.handleShowButton}
+                classNames={classNames}
+                showButton={this.showButton}
                 selected={answer => this.computeAnswer(answer, correct)}
+                playAgain={this.playAgain}
               />
               <div className="submit">
-                {showButton ? <button className="fancy-btn" onClick={this.nextQuestion} >{nr===total ? 'Finish Quiz' : 'Next question'}</button> : null}
+                {showButton ? <button className="fancy-btn" onClick={this.nextQuestion} >{qR === total ? 'Finish Quiz' : 'Next question'}</button> : null}
               </div>
           </Row>
-            )
-          )}
 
-          {this.state.responses === 6 ? (<Result score={this.state.score} playAgain={this.playAgain} />) : null}
+          <Popup
+              style={{display: displayPopup}}
+              number={qR}
+              score={score}
+              total={total}
+              startQuiz={this.startQuiz}
+              playAgain={this.playAgain}
+            />
+
           </div>
       </Container>
     );
