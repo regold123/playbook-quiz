@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f76ff59bf5618a5462512be0a3c13c75",
+    "revision": "4fe4895db3983836defd9bb8576f76f5",
     "url": "/playbook-quiz/index.html"
   },
   {
-    "revision": "85e8ec4682889d0cb2c4",
+    "revision": "a113c068a6076fc6eb49",
     "url": "/playbook-quiz/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "8a6083808ce540dfbcc0",
-    "url": "/playbook-quiz/static/css/main.e2990871.chunk.css"
+    "revision": "327fbea12e86253b5333",
+    "url": "/playbook-quiz/static/css/main.4557edaa.chunk.css"
   },
   {
-    "revision": "85e8ec4682889d0cb2c4",
-    "url": "/playbook-quiz/static/js/2.5cebee4e.chunk.js"
+    "revision": "a113c068a6076fc6eb49",
+    "url": "/playbook-quiz/static/js/2.13d72e89.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/playbook-quiz/static/js/2.5cebee4e.chunk.js.LICENSE.txt"
+    "url": "/playbook-quiz/static/js/2.13d72e89.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8a6083808ce540dfbcc0",
-    "url": "/playbook-quiz/static/js/main.c21c8da4.chunk.js"
+    "revision": "327fbea12e86253b5333",
+    "url": "/playbook-quiz/static/js/main.3a19da20.chunk.js"
   },
   {
     "revision": "d82ef95dfac645ce36da",

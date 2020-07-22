@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/playbook-quiz/static/css/main.e2990871.chunk.css",
-    "main.js": "/playbook-quiz/static/js/main.c21c8da4.chunk.js",
-    "main.js.map": "/playbook-quiz/static/js/main.c21c8da4.chunk.js.map",
+    "main.css": "/playbook-quiz/static/css/main.4557edaa.chunk.css",
+    "main.js": "/playbook-quiz/static/js/main.3a19da20.chunk.js",
+    "main.js.map": "/playbook-quiz/static/js/main.3a19da20.chunk.js.map",
     "runtime-main.js": "/playbook-quiz/static/js/runtime-main.1af17c6d.js",
     "runtime-main.js.map": "/playbook-quiz/static/js/runtime-main.1af17c6d.js.map",
     "static/css/2.af3c1da9.chunk.css": "/playbook-quiz/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.5cebee4e.chunk.js": "/playbook-quiz/static/js/2.5cebee4e.chunk.js",
-    "static/js/2.5cebee4e.chunk.js.map": "/playbook-quiz/static/js/2.5cebee4e.chunk.js.map",
+    "static/js/2.13d72e89.chunk.js": "/playbook-quiz/static/js/2.13d72e89.chunk.js",
+    "static/js/2.13d72e89.chunk.js.map": "/playbook-quiz/static/js/2.13d72e89.chunk.js.map",
     "index.html": "/playbook-quiz/index.html",
-    "precache-manifest.b185e1a6e54a8ce74393431f56cd1460.js": "/playbook-quiz/precache-manifest.b185e1a6e54a8ce74393431f56cd1460.js",
+    "precache-manifest.9574aff683b3ae92aaca4bc46b58b7c9.js": "/playbook-quiz/precache-manifest.9574aff683b3ae92aaca4bc46b58b7c9.js",
     "service-worker.js": "/playbook-quiz/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/playbook-quiz/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.e2990871.chunk.css.map": "/playbook-quiz/static/css/main.e2990871.chunk.css.map",
-    "static/js/2.5cebee4e.chunk.js.LICENSE.txt": "/playbook-quiz/static/js/2.5cebee4e.chunk.js.LICENSE.txt",
+    "static/css/main.4557edaa.chunk.css.map": "/playbook-quiz/static/css/main.4557edaa.chunk.css.map",
+    "static/js/2.13d72e89.chunk.js.LICENSE.txt": "/playbook-quiz/static/js/2.13d72e89.chunk.js.LICENSE.txt",
     "static/media/90G.jpg": "/playbook-quiz/static/media/90G.2d822521.jpg",
     "static/media/90L.jpg": "/playbook-quiz/static/media/90L.8228bde6.jpg",
     "static/media/90N.jpg": "/playbook-quiz/static/media/90N.67feb7b6.jpg",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.1af17c6d.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.5cebee4e.chunk.js",
-    "static/css/main.e2990871.chunk.css",
-    "static/js/main.c21c8da4.chunk.js"
+    "static/js/2.13d72e89.chunk.js",
+    "static/css/main.4557edaa.chunk.css",
+    "static/js/main.3a19da20.chunk.js"
   ]
 }
