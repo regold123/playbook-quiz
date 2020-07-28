@@ -1,6 +1,6 @@
 body {
     background-color: #e4e4e4;
-	font-family: Open Sans;
+	  font-family: Open Sans;
     margin-top: 5%;
     margin-bottom: 50px;
 }
@@ -41,8 +41,15 @@ body {
   box-shadow: 0px 0px 50px 3px rgb(0, 180, 0), 0px 6px 20px 0 rgb(0, 180, 0);
 }
 
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .row {
   justify-content: center;
+  display: flex;
 }
 
 .playButton {
@@ -100,21 +107,6 @@ body {
 }
 
 
-/*
-.optionButton {
-  position: relative;
-  padding: 0px;
-  display: inline-block;
-  margin: 10px;
-  outline: none;
-  box-shadow: 2px 2px 4px #000000;
-  font-size: 1em;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-}
-*/
-
 button {
   position: relative;
   padding: 0px;
@@ -128,12 +120,12 @@ button {
   cursor: pointer;
 }
 
-.optionButton img{
-  max-width: 200px;
+.answerBlock {
+  flex-wrap: nowrap;
 }
 
 
-.optionButton img:hover {
+.answerBlock img:hover {
     transform: scale(1.03);
     box-shadow: 2px 2px 4px #000000;
 }
@@ -147,7 +139,7 @@ button {
     font-size: 18px;
     font-weight: 600;
     padding: 14px 75px;
-    margin: 0 auto;
+    margin: 20px auto;
     text-transform: uppercase;
     transition: color .2s ease, background-color .2s ease;
 }

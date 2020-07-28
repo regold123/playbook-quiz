@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/style.css";
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import questionBank from "./questionBank/questionBank.js";
 import QuestionBox from "./components/answers";
 import Popup from "./components/popup";
@@ -116,7 +115,6 @@ class Quiz extends React.Component {
 
           <div className="qBox">
 
-          <Row>
               <QuestionBox
                 number={qR}
                 total={total}
@@ -131,7 +129,6 @@ class Quiz extends React.Component {
               <div className="submit">
                 {showButton ? <button className="fancy-btn" onClick={this.nextQuestion} >{qR === total ? 'Finish Quiz' : 'Next question'}</button> : null}
               </div>
-          </Row>
 
           <Popup
               style={{display: displayPopup}}
